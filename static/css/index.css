@@ -133,5 +133,16 @@ body {
   font-size: smaller;
 }
 
+.twentytwenty-custom {
+  width: 400px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  
+}
 
-
+@media (max-width: 767px) {
+  .twentytwenty-custom  {
+    width: 400px !important;
+    margin: 0 auto; /* Center the element */
+  }
+}

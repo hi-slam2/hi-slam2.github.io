@@ -2,30 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="description" content="HI-SLAM2 Geometry-Aware Gaussian SLAM for Fast Monocular Scene Reconstruction">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="HI-SLAM2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="u8H3xP_jC5IuJ0l5C1RcDoujNDEnkXqv9bFrbrQwP8M" />
 
-
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>HI-SLAM2</title>
+  <link rel="icon" type="image/x-icon" href="static/images/hi.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -47,33 +31,83 @@
 <body>
 
 
-  <section class="hero">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://www.ifp.uni-stuttgart.de/en/institute/team/Zhang-00004/">
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://bamf-slam.github.io/">
+              BAMF-SLAM - ICRA 2023
+            </a>
+            <a class="navbar-item" href="https://is-near.github.io/">
+              IS-NEAR - 3DV 2024
+            </a>
+            <a class="navbar-item" href="https://hi-slam.github.io/">
+              HI-SLAM - RA-L 2024
+            </a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </nav>
+
+
+  <section class="hero" style="margin-top: -30px">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <div class="columns is-centered">
+        <!-- <div class="columns is-centered"> -->
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">
+              <p>HI-SLAM2</p>
+              Geometry-Aware Gaussian SLAM for Fast Monocular Scene Reconstruction
+            </h1>
+            <!-- <div class="column is-full_width"> -->
+              <!-- <h2 class="title is-4">IEEE Robotics and Automation Letters 2024</h2> -->
+            <!-- </div> -->
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://www.ifp.uni-stuttgart.de/en/institute/team/Zhang-00004/" target="_blank">Wei Zhang</a><sup>1</sup></span>&nbsp;&nbsp;
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                  <a href="https://cvg.cit.tum.de/members/cheq" target="_blank">Qing Cheng</a><sup>2</sup></span>&nbsp;&nbsp;
+                <span class="author-block">
+                  <a href="https://www.ifp.uni-stuttgart.de/en/institute/team/Skuddis/" target="_blank">David Skuddis</a><sup>1</sup></span>&nbsp;&nbsp;
+                <span class="author-block">
+                  <a href="https://www.niclas-zeller.de/" target="_blank">Niclas Zeller</a><sup>3</sup></span>&nbsp;&nbsp;
+                <span class="author-block">
+                    <a href="https://cvg.cit.tum.de/members/cremers" target="_blank">Daniel Cremers</a><sup>2,4</sup></span>&nbsp;&nbsp;
+                  <a href="https://www.ifp.uni-stuttgart.de/en/institute/team/Haala-00001/" target="_blank">Norbert Haala</a><sup>1</sup></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>University of Stuttgart</span>&nbsp;&nbsp;
+                    <span class="author-block"><sup>2</sup>Technical University of Munich</span>&nbsp;&nbsp;
+                    <span class="author-block"><sup>3</sup>Karlsruhe University of Applied Sciences</span>&nbsp;&nbsp;
+                    <span class="author-block"><sup>4</sup>Munich Center for Machine Learning,</span>&nbsp;&nbsp;
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://hi-slam2.github.io/" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -81,43 +115,32 @@
                         <span>Paper</span>
                       </a>
                     </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
+              <!-- ArXiv abstract Link -->
+              <span class="link-block">
+                <a href="https://hi-slam2.github.io/" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
                 </span>
+                <span>arXiv</span>
+              </a>
+            </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://hi-slam2.github.io/" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code (Coming soon)</span>
                 </a>
               </span>
+
             </div>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
   </div>
 </section>
@@ -127,29 +150,24 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <img src="static/images/teaser.jpg" class="center"/>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+        HI-SLAM2 constructs a 3DGS map (a) from monocular input, achieving accurate mesh reconstructions (b) and high-quality renderings (c). It outperforms RGB-only and recent RGB-D methods in geometry and appearance reconstruction.</h2>
     </div>
   </div>
 </section>
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            We present <strong>HI-SLAM2</strong>, a geometry-aware Gaussian SLAM system that achieves fast and accurate monocular scene reconstruction using only RGB input. Existing Neural SLAM or 3DGS-based SLAM methods often trade off between rendering quality and geometry accuracy, our research demonstrates that both can be achieved simultaneously with RGB input alone. The key idea of our approach is to enhance the ability for geometry estimation by combining easy-to-obtain monocular priors with learning-based dense SLAM, and then using 3D Gaussian splatting as our core map representation to efficiently model the scene. Upon loop closure, our method ensures on-the-fly global consistency through efficient pose graph bundle adjustment and instant map updates by explicitly deforming the 3D Gaussian units based on anchored keyframe updates. Furthermore, we introduce a grid-based scale alignment strategy to maintain improved scale consistency in prior depths for finer depth details. Through extensive experiments on Replica, ScanNet, and ScanNet++, we demonstrate significant improvements over existing Neural SLAM methods and even surpass RGB-D-based methods in both reconstruction and rendering quality.
+        </p>
         </div>
       </div>
     </div>
@@ -157,128 +175,59 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+<!-- Method. -->
+<section class="section">
+  <div class="container is-max-desktop">
+<div class="columns is-centered has-text-centered">
+  <div class="column is-full_width">
+    <hr>
+    <h2 class="title is-3">Method</h2>
+    <br>
+    <img src="static/images/pipeline.jpg" class="center"/>
+    <div class="content has-text-justified">
+      <br>  
+      <p>
+        <strong>System Overview</strong>: Our framework consists of four key stages: online camera tracking, online loop closing, online mapping, continuous mapping, and offline refinement. The camera tracking is performed using a recurrent-network-based approach to estimate camera poses and generate depth maps from RGB input. For 3D scene representation, we use 3DGS to model scene geometry, enabling efficient online map updates. These updates are integrated with pose graph BA for online loop closing, achieving both fast updates and high-quality rendering. In the offline refinement stage, camera poses and scene geometry undergo full BA, followed by joint optimization of Gaussian primitives and camera poses to further enhance global consistency.
+      </p>
     </div>
   </div>
 </div>
+<hr>
 </div>
 </section>
-<!-- End image carousel -->
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- Result. -->
+<section class="section">
+  <div class="container is-max-desktop">
+<div class="columns is-centered has-text-centered">
+  <div class="column is-full_width">
+    <h2 class="title is-3">Results</h2>
+    <h3 align="left" class="title is-3">Replica</h3>
+    <img src="static/images/replica.jpg" class="center"/>
+    <br>
+    <h3 align="left" class="title is-3">ScanNet</h3>
+    <img src="static/images/compare_scannet.jpg" class="center"/>
+    <br>
+    <h3 align="left" class="title is-3">ScanNet++</h3>
+    <img src="static/images/scannetpp.jpg" class="center"/>
   </div>
+</div>
+<hr>
+</div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{zhang2024hi2,
+      title={HI-SLAM2: Geometry-Aware Gaussian SLAM for Fast Monocular Scene Reconstruction}, 
+      author={Zhang, Wei and Cheng, Qing and Skuddis, David and Zeller, Niclas and Cremers, Daniel and Haala, Norbert},
+      journal={arXiv preprint},
+      year={2024}
+    }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -292,7 +241,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
